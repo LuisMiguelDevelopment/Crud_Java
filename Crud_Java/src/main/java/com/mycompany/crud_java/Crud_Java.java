@@ -1,16 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
 
 package com.mycompany.crud_java;
 
-/**
- *
- * @author luism
- */
+import java.sql.Connection;
+import com.mycompany.crud_java.ConexionSqlServer;
+
 public class Crud_Java {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        ConexionSqlServer con = new ConexionSqlServer();
+        Connection conexion = con.obtenerConexion();
     }
 }
